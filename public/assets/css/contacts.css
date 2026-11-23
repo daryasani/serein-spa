@@ -1,0 +1,392 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #DDCACC;
+    color: #000000;
+    font-family: "Roboto", sans-serif;
+    min-height: 100vh;
+}
+
+
+.main-nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    padding: 10px 0;
+}
+
+.header_list {
+    background-color: #ffffff;
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    padding: 15px 40px;
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    border-radius: 30px;
+    justify-content: center;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    width: auto;
+    min-width: 70%;
+    max-width: 90%;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.logo-text {
+    font-family: "Stalinist One", sans-serif !important;
+    color: #964943;
+    margin-right: auto;
+    font-size: 1.2rem;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.nav-link {
+    padding: 2px 0;
+    display: inline-block;
+    text-decoration: none;
+    color: #000000;
+    font-weight: 500;
+    transition: color 0.3s;
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    white-space: nowrap;
+}
+
+.nav-link:hover {
+    color: #964943;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #964943;
+    transition: width 0.3s;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.page-header {
+    margin-top: 120px;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.page-title {
+    font-family: "Great Vibes", cursive;
+    font-size: 72px;
+    font-weight: 400;
+    color: #964943;
+    margin-bottom: 20px;
+}
+
+.page-subtitle {
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    color: #444444;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+
+
+.info-section {
+    padding: 0 40px 80px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.info-row {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.info-card {
+    background-color: #ffffff;
+    border-radius: 30px;
+    padding: 30px;
+    width: 350px;
+    border: 1px solid rgba(150, 73, 67, 0.1);
+}
+
+
+.info-card:hover {
+    transform: none;
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid rgba(150, 73, 67, 0.2);
+}
+
+.card-icon {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(150, 73, 67, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #964943;
+    font-size: 1.5rem;
+}
+
+.card-title {
+    font-family: "Inter", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #964943;
+}
+
+.card-content {
+    line-height: 1.6;
+    color: #000000;
+    font-size: 1rem;
+}
+
+
+.address-line {
+    margin-bottom: 12px;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.address-line i {
+    color: #964943;
+    margin-top: 3px;
+    flex-shrink: 0;
+    font-size: 1.1rem;
+}
+
+
+.phone-number-text {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    color: #333;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.1rem;
+}
+
+.phone-number-text i {
+    margin-right: 10px;
+    color: #964943;
+    width: 20px;
+    font-size: 1.1rem;
+}
+
+.hours-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(150, 73, 67, 0.1);
+}
+
+.hours-day {
+    font-weight: 500;
+    color: #333;
+}
+
+.hours-time {
+    color: #964943;
+    font-weight: 600;
+}
+
+.email-link {
+    color: #964943;
+    text-decoration: none;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 20px;
+    transition: color 0.3s;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.1rem;
+}
+
+.email-link:hover {
+    color: #333;
+}
+
+.email-link i {
+    margin-right: 10px;
+    width: 20px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-icon {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: rgba(150, 73, 67, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #964943;
+    font-size: 1.3rem;
+    transition: all 0.3s;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    background-color: #964943;
+    color: white;
+}
+
+
+.footer {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 50px 40px;
+    text-align: center;
+    border-top: 2px solid rgba(150, 73, 67, 0.2);
+    margin-top: 60px;
+}
+
+.footer-logo {
+    font-family: 'Stalinist One', sans-serif;
+    color: #964943;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.footer-text {
+    font-family: "Inter", sans-serif;
+    color: #666;
+    line-height: 1.6;
+}
+
+@media (max-width: 1200px) {
+    .header_list {
+        width: 75%;
+    }
+
+    .info-card {
+        width: 300px;
+    }
+}
+
+@media (max-width: 992px) {
+    .header_list {
+        width: 85%;
+        gap: 25px;
+    }
+
+    .info-row {
+        gap: 20px;
+    }
+
+    .info-card {
+        width: calc(33.333% - 20px);
+        min-width: 250px;
+    }
+
+    .info-section {
+        padding: 0 20px 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    .page-header {
+        margin-top: 100px;
+        padding: 30px 20px 40px;
+    }
+
+    .page-title {
+        font-size: 56px;
+    }
+
+    .page-subtitle {
+        font-size: 18px;
+    }
+
+    .header_list {
+        width: 90%;
+        gap: 15px;
+        padding: 12px 25px;
+    }
+
+    .info-card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .page-title {
+        font-size: 48px;
+    }
+
+    .page-subtitle {
+        font-size: 16px;
+    }
+
+    .header_list {
+        width: 95%;
+        gap: 10px;
+        padding: 10px 15px;
+    }
+
+    .logo-text {
+        font-size: 1rem;
+    }
+
+    .nav-link {
+        font-size: 0.9rem;
+    }
+
+    .info-section {
+        padding: 0 15px 40px;
+    }
+
+    .info-card {
+        padding: 25px 20px;
+    }
+
+    .card-icon {
+        width: 45px;
+        height: 45px;
+        font-size: 1.3rem;
+    }
+
+    .card-title {
+        font-size: 1.2rem;
+    }
+}
