@@ -8,9 +8,11 @@
 
 ## Скриншоты
 
-![Главная страница Serein SPA](docs/screenshots/home.png)
+![Главная страница Serein SPA](docs/screenshots/serein-home.png)
 
 ![Раздел «О нас»](docs/screenshots/about.png)
+
+![Форма обратного звонка](docs/screenshots/callback.png)
 
 ## Локальный запуск
 
